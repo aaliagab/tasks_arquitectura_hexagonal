@@ -6,6 +6,7 @@ import lombok.Setter;
 
 @Getter
 @AllArgsConstructor
+//00:36:20
 public class AdditionalTasksInfo {
     private final Long userId;
     private final String userName;
