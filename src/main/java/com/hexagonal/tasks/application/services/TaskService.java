@@ -9,12 +9,12 @@ import java.util.List;
 import java.util.Optional;
 @AllArgsConstructor
 public class TaskService implements CreateTaskUseCase,
-        DeleteTaskUseCase, GetAdditionalTaskInfo, RetrieveTaskUseCase, UpdateTaskUseCase {
+        DeleteTaskUseCase, GetAdditionalTaskInfoUseCase, RetrieveTaskUseCase, UpdateTaskUseCase {
     private final CreateTaskUseCase createTaskUseCase;
-    private final DeleteTaskUseCase deleteTaskUseCase;
-    private final GetAdditionalTaskInfo getAdditionalTaskInfo;
     private final RetrieveTaskUseCase retrieveTaskUseCase;
     private final UpdateTaskUseCase updateTaskUseCase;
+    private final DeleteTaskUseCase deleteTaskUseCase;
+    private final GetAdditionalTaskInfoUseCase getAdditionalTaskInfo;
 
     @Override
     public Task createTask(Task task) {
